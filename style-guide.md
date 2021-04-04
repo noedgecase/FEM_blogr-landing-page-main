@@ -26,8 +26,8 @@ The designs were created to the following widths:
 
 Background gradient - Intro/CTA mobile nav:
 
-- Very light red: hsl(13, 100%, 72%)
-- Light red: hsl(353, 100%, 62%)
+- Very light red: hsl(13, 100%, 72%);
+- Light red: hsl(353, 100%, 62%);
 
 Background gradient - body:
 
