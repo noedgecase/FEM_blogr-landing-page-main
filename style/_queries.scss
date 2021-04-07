@@ -1,2 +1,52 @@
-@media (max-width: 420) {
+@media (max-width: 780px) {
+  body {
+    width: 100%;
+  }
+  header {
+    height: 500px;
+    background-size: 1400px;
+    background-position: center;
+    .nav--buttons {
+      display: none;
+    }
+    .logo {
+      padding: 0;
+    }
+    #nav--logo {
+      width: 80px;
+    }
+    .splash--lines {
+      h1 {
+        text-align: center;
+        font-size: 28px;
+      }
+      p {
+        text-align: center;
+        font-size: 15px;
+        margin: 10px;
+      }
+    }
+    .splash--btns {
+      margin: 25px 0;
+    }
+  }
+  .section--1 {
+    flex-direction: column;
+    padding: 0;
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .s1--text {
+      padding: 0;
+    }
+    .s1--img {
+      img {
+        width: 350px;
+        transform: translate(0, 0);
+        right: 0;
+      }
+    }
+  }
 }
