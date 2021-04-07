@@ -176,7 +176,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 15px;
   font-family: Overpass;
   font-weight: 600;
   padding: 1rem;
@@ -248,14 +248,17 @@ label {
   padding: 3rem;
   position: relative;
   h1 {
+    text-align: center;
     top: 0;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     color: $veryDarkBlue;
     font-size: 50px;
+    width: 90%;
   }
   article {
+    width: 80%;
     margin: 4rem 0 0 0;
   }
 }
@@ -281,7 +284,7 @@ label {
 
 .s1--text,
 .s3--text {
-  padding: 0 10rem;
+  // padding: 0 10rem;
   margin: 5rem 0;
   align-items: center;
   display: flex;
@@ -312,7 +315,7 @@ label {
     margin: 1rem 0;
   }
   p {
-    padding-right: 25rem;
+    padding-right: 10%;
     color: $whiteText;
     line-height: 30px;
     margin: 1rem 0;
@@ -323,11 +326,12 @@ label {
   position: relative;
   flex: 1;
   img {
-    width: 1200px;
-    transform: translate(-50%, 0);
+    width: 120%;
+    min-width: 700px;
+    transform: translate(-50%, -50%);
     position: absolute;
-    right: -1000px;
-    top: -150px;
+    left: 90%;
+    top: 50%;
   }
 }
 
@@ -335,11 +339,12 @@ label {
   position: relative;
   flex: 2;
   img {
-    right: -150px;
+    max-width: 700px;
+    right: 0;
     transform: translate(-50%, 0);
     top: -150px;
     position: absolute;
-    width: 700px;
+    width: 100%;
   }
 }
 
