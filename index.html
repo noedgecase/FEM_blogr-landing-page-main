@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Frontend Mentor | [Blogr]</title>
-    <script src="js/script.js"></script>
   </head>
 
   <body>
@@ -21,6 +20,9 @@
         <div class="logo">
           <img id="nav--logo" src="./images/logo.svg" alt="" />
         </div>
+        <button id="js--burger">
+          <img id="burger-icon" src="./images/icon-hamburger.svg" alt="" />
+        </button>
         <div class="nav--buttons">
           <div class="dropdown">
             <div class="product">
@@ -51,12 +53,58 @@
               </ul>
             </div>
           </div>
+
           <div class="login--signup">
             <a href="#">Login</a>
             <button class="btn btn--white">Sign Up</button>
           </div>
         </div>
       </nav>
+
+      <div class="mobile--hamburger--nav fade-out">
+        <div class="mobile--product">
+          <span class="product--nav--btn">
+            <button>Product</button>
+            <img src="./images/icon-arrow-dark.svg" alt="" />
+          </span>
+          <ul class="hidden">
+            <li>Desktop Apps</li>
+            <li>Web Sites</li>
+            <li>SEO</li>
+          </ul>
+        </div>
+
+        <div class="mobile--company">
+          <span class="company--nav--btn">
+            <button>Company</button>
+            <img src="./images/icon-arrow-dark.svg" alt="" />
+          </span>
+          <ul class="hidden">
+            <li>Work with Us</li>
+            <li>Ideas</li>
+            <li>Commitment</li>
+          </ul>
+        </div>
+
+        <div class="mobile--connect">
+          <span class="connect--nav--btn">
+            <button>Connect</button>
+            <img src="./images/icon-arrow-dark.svg" alt="" />
+          </span>
+          <ul class="hidden">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+        <hr
+          style="opacity: 0.2; margin: 1rem 0; width: 80%; text-align: left"
+        />
+        <div class="login--signup--mobile">
+          <a href="#">Login</a>
+          <button class="btn btn--gradient">Sign Up</button>
+        </div>
+      </div>
 
       <div class="splash">
         <div class="splash--lines">
@@ -186,5 +234,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

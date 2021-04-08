@@ -7,6 +7,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline: none;
 }
 
 body {
@@ -54,6 +55,97 @@ label {
   align-items: center;
 }
 
+.rotate--action {
+  transform: rotate(180deg);
+}
+
+.mobile--hamburger--nav {
+  opacity: 1;
+  transform: translateY(10px);
+  transition: all 0.2s ease-in;
+  z-index: 5;
+  left: 25%;
+  top: 100px;
+  position: fixed;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 275px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  span {
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    cursor: pointer;
+    img {
+      transform: rotate(0deg);
+      transition: all 0.4s ease;
+    }
+  }
+  button {
+    opacity: 0.8;
+    font-size: 18px;
+    color: $veryDarkBlue;
+    margin: 0 5px;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  .mobile--company,
+  .mobile--product,
+  .mobile--connect {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .product--nav--btn,
+  .company--nav--btn,
+  .connect--nav--btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $grayishBlue;
+    list-style: none;
+    border-radius: 5px;
+  }
+  li {
+    opacity: 0.8;
+    color: $veryDarkGrayishBlye;
+    font-weight: 600;
+    margin: 5px;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+  .login--signup--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      color: black;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 .nav--buttons {
   display: flex;
   flex: 3;
@@ -62,7 +154,6 @@ label {
   .dropdown {
     display: flex;
     flex: 3;
-    //   justify-content: space-around;
     .product,
     .company,
     .connect {
@@ -171,21 +262,68 @@ label {
   }
 }
 
+#js--burger {
+  z-index: 5;
+  position: fixed;
+  top: 50px;
+  right: 25px;
+  margin-right: 2rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  opacity: 0.8;
+  filter: drop-shadow (0 10px 10px black);
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none !important;
+  user-select: none;
+  pointer-events: none;
+}
+
 .btn {
+  vertical-align: middle;
   min-width: 120px;
+  min-height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15px;
   font-family: Overpass;
   font-weight: 600;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 50px;
   outline: none;
   border: none;
   margin: 0 0.5rem;
   &:hover {
     cursor: pointer;
+  }
+}
+
+.btn--gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 143, 112, 1) 0%,
+    rgba(255, 61, 80, 1) 50%
+  );
+  border-style: solid;
+  border-width: thin;
+  border-color: #fff;
+  color: white !important;
+  &:hover {
+    background-color: #fff;
+    color: $veryLightRedText;
   }
 }
 
@@ -205,6 +343,7 @@ label {
   border-color: #fff;
   color: white;
   &:hover {
+    border: none;
     background-color: #fff;
     color: $veryLightRedText;
   }
@@ -218,6 +357,7 @@ label {
   align-items: center;
   color: white;
   h1 {
+    text-align: center;
     font-size: 62px;
     margin: 0;
   }
