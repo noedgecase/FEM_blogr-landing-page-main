@@ -55,10 +55,10 @@ label {
 
 .mobile--hamburger--nav {
   opacity: 1;
-  transform: translateY(10px);
+  transform: translate(-50%, 10px);
   transition: all 0.2s ease-in;
   z-index: 5;
-  left: 25%;
+  left: 50%;
   top: 100px;
   position: fixed;
   margin: 0 auto;
@@ -275,7 +275,7 @@ label {
 
 .fade-out {
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translate(-50%, 0px);
   user-select: none;
   pointer-events: none;
 }
