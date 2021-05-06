@@ -46,7 +46,7 @@ document.getElementById('js--burger').addEventListener('click', () => {
   }
 });
 
-// mobile navigation
+// mobile navigation ////////////////////////////
 
 const companyBtn = document.querySelector('.company--nav--btn');
 const connectBtn = document.querySelector('.connect--nav--btn');

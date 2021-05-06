@@ -485,7 +485,7 @@ label {
   flex: 1;
 }
 .s3--img img {
-  width: 1000px;
+  width: clamp(500px, 80vw, 1000px);
   transform: translate(-50%, 0);
   position: absolute;
   left: 160px;
